@@ -132,10 +132,12 @@
     <ClCompile Include="is_leap_year.c" />
     <ClCompile Include="lab1.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="slide.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="addition.h" />
     <ClInclude Include="dice_range.h" />
+    <ClInclude Include="slide.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

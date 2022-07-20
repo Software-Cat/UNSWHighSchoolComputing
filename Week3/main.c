@@ -1,7 +1,8 @@
 #include "dice_range.h"
 #include "addition.h"
+#include "slide.h"
 
 int main() {
-	addition();
+	slide();
 	return 0;
 }

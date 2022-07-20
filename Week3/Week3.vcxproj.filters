@@ -30,12 +30,18 @@
     <ClCompile Include="is_leap_year.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="slide.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="dice_range.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="addition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="slide.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
