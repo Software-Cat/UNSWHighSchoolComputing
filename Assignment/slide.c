@@ -12,59 +12,135 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include <stdbool.h>
 
 void slide() {
-	// This line creates our 2D array called "map" and sets all
-	// of the blocks in the map to EMPTY.
-	int map[SIZE][SIZE] = { EMPTY };
+	// Initialize the board with empty blocks and the lazer in the middle
+	Board board = { {EMPTY}, SIZE / 2 };
 
-	// This line creates our laser_y variable. The laser starts in the
-	// middle of the map, at position 7.
-	int laser_y = SIZE / 2;
-
-	// TODO: Scan in the blocks.
-	parse_blocks(map);
-
-	// Validate the build instructions by printing the map
-	print_map(map, laser_y);
+	// Read user defined blocks
+	read_blocks(&board);
 
 	// Loop until the game is over
-	bool gameOver = false;
-	while (!gameOver) {
-		// TODO: Scan in commands until EOF.
-		// After each command is processed, you should call print_map.
+	while (!board.gameOver) {
+		print_board(&board);
+		read_command(&board);
 	}
 }
 
-void print_map(int map[SIZE][SIZE], int laser_y) {
-	// Print out the contents of the map array.
-	// Also print out a > symbol to denote the current laser position.
-
+void print_board(Board* board) {
+	// For each row
 	for (int i = 0; i < SIZE; i++) {
-		for (int j = 0; j < SIZE; j++) {
-			printf("%d ", (int)map[i][j]);
+		// If the lazer is on the row, print it
+		if (board->lazerY == i) {
+			printf("> ");
+		} else {
+			printf("  ");
 		}
+
+		// Print the cells
+		for (int j = 0; j < SIZE; j++) {
+			printf("%d ", board->map[i][j]);
+		}
+
 		printf("\n");
 	}
 }
 
-void parse_blocks(int map[SIZE][SIZE]) {
-	// Build blocks in the map
-	printf("How many blocks? ");
-	// TODO: Scan in the number of blocks.
-	int blockCount;
-	scanf("%d", &blockCount);
-
-	printf("Enter blocks:\n");
-	for (int i = 0; i < blockCount; i++) {
-		parse_block(map);
-	}
+void change_block(Board* board, int row, int column, int value) {
+	board->map[row][column] = value;
 }
 
-void parse_block(int map[SIZE][SIZE]) {
+void read_block(Board* board) {
 	int row, column, value;
 	scanf("%d %d %d", &row, &column, &value);
 
-	map[row][column] = value;
+	// Make sure row and column are valid locations on map
+	if (row >= SIZE || column >= SIZE) {
+		return;
+	}
+
+	// Modify the block type at a single position
+	change_block(board, row, column, value);
+}
+
+void read_blocks(Board* board) {
+	// Ask for total blocks to scan
+	int blockCount;
+	printf("How many blocks? ");
+	scanf("%d", &blockCount);
+
+	// Scan blocks
+	printf("Enter blocks:\n");
+	for (int i = 0; i < blockCount; i++) {
+		read_block(board);
+	}
+}
+
+void parse_command(Board* board, int args[]) {
+	switch (args[0]) {
+	case 1:
+		move_lazer(board, args[1]);
+		break;
+	case 2:
+		fire_lazer(board);
+		break;
+	default:
+		break;
+	}
+}
+
+void read_command(Board* board) {
+	// Scan all arguments until newline
+	int i = 0;
+	int args[100];
+	char temp;
+	do {
+		int result = scanf("%d%c", &args[i], &temp);
+
+		// Stop program if EOF is reached
+		if (result < 1) {
+			board->gameOver = true;
+			break;
+		}
+
+		i++;
+	} while (temp != '\n');
+
+	// Execute the command read
+	parse_command(board, args);
+}
+
+void move_lazer(Board* board, int dir) {
+	// If dir is not up or down (1 or -1), ignore
+	if (!(dir == 1 || dir == -1)) {
+		return;
+	}
+
+	// Make sure move is in bounds of map
+	if (!(board->lazerY < 0 || board->lazerY >= SIZE)) {
+		// Move up or down 1 unit
+		board->lazerY -= dir;
+	}
+}
+
+void fire_lazer(Board* board) {
+	// The number of blocks can the lazer destroy at max
+	int energyLeft = 4;
+
+	for (int i = 0; i < SIZE; i++) {
+		// Destroy the block
+		int currentBlock = board->map[board->lazerY][i];
+		if (currentBlock != EMPTY) {
+			// Destroy block
+			board->map[board->lazerY][i] = EMPTY;
+
+			// Spend energy
+			energyLeft--;
+		}
+
+		// Stop destroying if no energy left
+		if (energyLeft == 0) {
+			break;
+		}
+	}
 }
