@@ -32,7 +32,7 @@ void sort(double* observations[MAX_SAMPLE_SIZE]);
 // Main
 //=============================================================================
 
-int main(void) {
+int part4(void) {
 	int count = 0;
 	double input;
 	double observations[MAX_SAMPLE_SIZE] = { 0 };

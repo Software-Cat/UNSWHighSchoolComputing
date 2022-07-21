@@ -18,5 +18,14 @@
     <ClCompile Include="sort.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="sample_.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdev_.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mean_.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

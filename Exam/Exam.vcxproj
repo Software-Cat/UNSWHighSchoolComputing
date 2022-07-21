@@ -19,7 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="mean_.c" />
+    <ClCompile Include="sample_.c" />
     <ClCompile Include="sort.c" />
+    <ClCompile Include="stdev_.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

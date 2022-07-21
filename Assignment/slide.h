@@ -10,6 +10,7 @@ typedef struct Board {
 	int map[SIZE][SIZE];
 	int lazerY;
 	bool gameOver;
+	bool wonGame;
 } Board;
 
 void slide();
@@ -42,3 +43,11 @@ void read_command(Board* board);
 void move_lazer(Board* board, int dir);
 
 void fire_lazer(Board* board);
+
+void shift_left(Board* board);
+
+// Win lose
+
+bool has_won(Board* board);
+
+bool has_lost(Board* board);

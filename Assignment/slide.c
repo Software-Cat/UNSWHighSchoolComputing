@@ -15,7 +15,7 @@
 
 void slide() {
 	// Initialize the board with empty blocks and the lazer in the middle
-	Board board = { {EMPTY}, SIZE / 2 };
+	Board board = { {EMPTY}, SIZE / 2, false, false };
 
 	// Read user defined blocks
 	read_blocks(&board);
@@ -24,6 +24,14 @@ void slide() {
 	while (!board.gameOver) {
 		print_board(&board);
 		read_command(&board);
+	}
+
+	// End game
+	print_board(&board);
+	if (board.wonGame) {
+		printf("Game Won!");
+	} else {
+		printf("Game Lost!");
 	}
 }
 
@@ -84,6 +92,9 @@ void parse_command(Board* board, int args[]) {
 	case 2:
 		fire_lazer(board);
 		break;
+	case 3:
+		shift_left(board);
+		break;
 	default:
 		break;
 	}
@@ -143,4 +154,52 @@ void fire_lazer(Board* board) {
 			break;
 		}
 	}
+
+	// Check win
+	if (has_won(board)) {
+		board->gameOver = true;
+		board->wonGame = true;
+	}
+}
+
+void shift_left(Board* board) {
+	// Check lose before move
+	if (has_lost(board)) {
+		board->gameOver = true;
+		board->wonGame = false;
+		return;
+	}
+
+	for (int row = 0; row < SIZE; row++) {
+		for (int column = 0; column < SIZE - 1; column++) {
+			// Shift each cell left, except last column
+			board->map[row][column] = board->map[row][column + 1];
+		}
+		// Fill last column with empty space
+		board->map[row][SIZE - 1] = EMPTY;
+	}
+}
+
+bool has_won(Board* board) {
+	for (int row = 0; row < SIZE; row++) {
+		for (int column = 0; column < SIZE - 1; column++) {
+			if (board->map[row][column] != EMPTY) {
+				// Return blocking if any cell is not empty
+				return false;
+			}
+		}
+	}
+
+	return true;
+}
+
+bool has_lost(Board* board) {
+	for (int row = 0; row < SIZE; row++) {
+		if (board->map[row][0] == STONE) {
+			// Return blocking, if any cell is stone, lose immediately
+			return true;
+		}
+	}
+
+	return false;
 }
