@@ -18,24 +18,12 @@
     <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="dice_range.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="lab1.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="addition.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="is_leap_year.c">
+    <ClCompile Include="slide.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="dice_range.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="addition.h">
+    <ClInclude Include="slide.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -24,7 +24,7 @@ void slide() {
 	int laser_y = SIZE / 2;
 
 	// TODO: Scan in the blocks.
-	parse_blocks(&map);
+	parse_blocks(map);
 
 	// Validate the build instructions by printing the map
 	print_map(map, laser_y);
@@ -37,14 +37,19 @@ void slide() {
 	}
 }
 
-void print_map(int* map[SIZE][SIZE], int laser_y) {
+void print_map(int map[SIZE][SIZE], int laser_y) {
 	// Print out the contents of the map array.
 	// Also print out a > symbol to denote the current laser position.
 
-	printf("Replace this statement with the map in a grid format\n");
+	for (int i = 0; i < SIZE; i++) {
+		for (int j = 0; j < SIZE; j++) {
+			printf("%d ", (int)map[i][j]);
+		}
+		printf("\n");
+	}
 }
 
-void parse_blocks(int* map[SIZE][SIZE]) {
+void parse_blocks(int map[SIZE][SIZE]) {
 	// Build blocks in the map
 	printf("How many blocks? ");
 	// TODO: Scan in the number of blocks.
@@ -53,11 +58,11 @@ void parse_blocks(int* map[SIZE][SIZE]) {
 
 	printf("Enter blocks:\n");
 	for (int i = 0; i < blockCount; i++) {
-		parse_block(&map);
+		parse_block(map);
 	}
 }
 
-void parse_block(int* map[SIZE][SIZE]) {
+void parse_block(int map[SIZE][SIZE]) {
 	int row, column, value;
 	scanf("%d %d %d", &row, &column, &value);
 
