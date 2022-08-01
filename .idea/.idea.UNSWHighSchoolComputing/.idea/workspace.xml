@@ -9,24 +9,52 @@
     <projectFile>Exam/Exam.vcxproj</projectFile>
     <projectFile>WeekB2/WeekB2.vcxproj</projectFile>
     <projectFile>WeekB3/WeekB3.vcxproj</projectFile>
+    <projectFile>ConsoleApplication1AssignmentB/ConsoleApplication1AssignmentB.vcxproj</projectFile>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a98e0e9-bd2b-47de-8fed-a628cf8de5f1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/WeekB3/WeekB3.vcxproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeekB3/WeekB3.vcxproj.filters" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeekB3/devowel.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeekB3/devowel.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeekB3/main.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeekB3/proper.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeekB3/reverse.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UNSWHighSchoolComputing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UNSWHighSchoolComputing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNSWHighSchoolComputing.sln" beforeDir="false" afterPath="$PROJECT_DIR$/UNSWHighSchoolComputing.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week 5/sub.c" beforeDir="false" afterPath="$PROJECT_DIR$/Week 5/sub.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week2/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Week2/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Week3/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week4/grid.c" beforeDir="false" afterPath="$PROJECT_DIR$/Week4/grid.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeekB2/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/WeekB2/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment/Assignment.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment/Assignment.vcxproj.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment/slide.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment/slide.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exam/Exam.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exam/Exam.vcxproj.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exam/mean_.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exam/sample_.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exam/sort.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exam/stdev_.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week 5/Week 5.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week 5/Week 5.vcxproj.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week 5/fibonacci.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week 5/numbers.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week 5/sub.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/Week2.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/Week2.vcxproj.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/lab1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/lab1.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/lab3.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/lab3.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week3/Week3.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week3/Week3.vcxproj.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week3/addition.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week3/addition.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week3/asker.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week3/asker.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week3/dice_range.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week3/dice_range.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week3/is_leap_year.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week3/lab1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week3/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week4/Week4.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week4/Week4.vcxproj.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week4/factorial.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week4/factorial.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week4/grid.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week4/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week4/numbers.c" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,25 +70,28 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="Toolset" />
+  </component>
   <component name="ProjectId" id="2CQSRSrl0nNa3fmVbBBbVfrCaPj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "ezargs.lastUsed": "",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "rider.code.cleanup.on.save": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;ezargs.lastUsed&quot;: &quot;&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;rider.code.cleanup.on.save&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="C++ Project.WeekB3">
     <configuration name="Assignment" type="CppProject" factoryName="C++ Project">
       <configuration_1>
@@ -104,6 +135,52 @@
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
       </configuration_4>
       <option name="DEFAULT_PROJECT_PATH" value="$PROJECT_DIR$/Assignment/Assignment.vcxproj" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="ConsoleApplication1AssignmentB" type="CppProject" factoryName="C++ Project">
+      <configuration_1>
+        <option name="CONFIGURATION" value="Debug" />
+        <option name="PLATFORM" value="x64" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/ConsoleApplication1AssignmentB/ConsoleApplication1AssignmentB.vcxproj" />
+        <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
+        <option name="PROGRAM_PARAMETERS" value="$(LocalDebuggerCommandArguments)" />
+        <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
+        <option name="PASS_PARENT_ENVS" value="1" />
+        <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      </configuration_1>
+      <configuration_2>
+        <option name="CONFIGURATION" value="Debug" />
+        <option name="PLATFORM" value="x86" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/ConsoleApplication1AssignmentB/ConsoleApplication1AssignmentB.vcxproj" />
+        <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
+        <option name="PROGRAM_PARAMETERS" value="$(LocalDebuggerCommandArguments)" />
+        <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
+        <option name="PASS_PARENT_ENVS" value="1" />
+        <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      </configuration_2>
+      <configuration_3>
+        <option name="CONFIGURATION" value="Release" />
+        <option name="PLATFORM" value="x64" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/ConsoleApplication1AssignmentB/ConsoleApplication1AssignmentB.vcxproj" />
+        <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
+        <option name="PROGRAM_PARAMETERS" value="$(LocalDebuggerCommandArguments)" />
+        <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
+        <option name="PASS_PARENT_ENVS" value="1" />
+        <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      </configuration_3>
+      <configuration_4>
+        <option name="CONFIGURATION" value="Release" />
+        <option name="PLATFORM" value="x86" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/ConsoleApplication1AssignmentB/ConsoleApplication1AssignmentB.vcxproj" />
+        <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
+        <option name="PROGRAM_PARAMETERS" value="$(LocalDebuggerCommandArguments)" />
+        <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
+        <option name="PASS_PARENT_ENVS" value="1" />
+        <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      </configuration_4>
+      <option name="DEFAULT_PROJECT_PATH" value="$PROJECT_DIR$/ConsoleApplication1AssignmentB/ConsoleApplication1AssignmentB.vcxproj" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -443,7 +520,8 @@
       <workItem from="1658733670400" duration="145000" />
       <workItem from="1658733925936" duration="3518000" />
       <workItem from="1659345454968" duration="303000" />
-      <workItem from="1659345815118" duration="1830000" />
+      <workItem from="1659345815118" duration="2034000" />
+      <workItem from="1659347913681" duration="30000" />
     </task>
     <task id="LOCAL-00001" summary="Track Rider files">
       <created>1658734127644</created>
@@ -459,7 +537,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659345577294</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Solve week 3">
+      <created>1659347707304</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659347707305</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -482,7 +567,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Track Rider files" />
     <MESSAGE value="Solve week 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve week 2" />
+    <MESSAGE value="Solve week 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve week 3" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
