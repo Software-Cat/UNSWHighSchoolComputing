@@ -10,10 +10,32 @@
     <projectFile>WeekB2/WeekB2.vcxproj</projectFile>
     <projectFile>WeekB3/WeekB3.vcxproj</projectFile>
     <projectFile>ConsoleApplication1AssignmentB/ConsoleApplication1AssignmentB.vcxproj</projectFile>
+    <projectFile>WeekA2/WeekA2.vcxproj</projectFile>
+    <projectFile>WeekA3/WeekA3.vcxproj</projectFile>
+    <projectFile>WeekA4/WeekA4.vcxproj</projectFile>
+    <projectFile>WeekA5/WeekA5.vcxproj</projectFile>
+    <projectFile>ExamA/ExamA.vcxproj</projectFile>
+    <projectFile>AssignmentA/AssignmentA.vcxproj</projectFile>
+    <projectFile>AssignmentB/AssignmentB.vcxproj</projectFile>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a98e0e9-bd2b-47de-8fed-a628cf8de5f1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.UNSWHighSchoolComputing/.idea/copyright/Pizzeria.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.UNSWHighSchoolComputing/.idea/copyright/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.UNSWHighSchoolComputing/.idea/scopes/AssignmentB.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AssignmentB/AssignmentB.vcxproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AssignmentB/AssignmentB.vcxproj.filters" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AssignmentB/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AssignmentB/main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AssignmentB/main.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AssignmentB/order.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AssignmentB/order.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AssignmentB/pizzeria.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AssignmentB/pizzeria.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AssignmentB/utils.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AssignmentB/utils.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UNSWHighSchoolComputing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UNSWHighSchoolComputing/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNSWHighSchoolComputing.sln" beforeDir="false" afterPath="$PROJECT_DIR$/UNSWHighSchoolComputing.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +47,15 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/stdio.h" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/string.h" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="NamedScopeManager">
+    <order>
+      <scope name="AssignmentB" />
+    </order>
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -38,25 +66,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;ezargs.lastUsed&quot;: &quot;&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;rider.code.cleanup.on.save&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "ezargs.lastUsed": "",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "rider.code.cleanup.on.save": "true",
+    "settings.editor.selected.configurable": "reference.settings.grazie.pro",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="C++ Project.WeekB3">
-    <configuration name="Assignment" type="CppProject" factoryName="C++ Project">
+}]]></component>
+  <component name="RunManager" selected="C++ Project.AssignmentB">
+    <configuration name="AssignmentA" type="CppProject" factoryName="C++ Project">
       <configuration_1>
         <option name="CONFIGURATION" value="Debug" />
         <option name="PLATFORM" value="x64" />
-        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Assignment/Assignment.vcxproj" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/AssignmentA/AssignmentA.vcxproj" />
         <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
         <option name="PROGRAM_PARAMETERS" value="$(LocalDebuggerCommandArguments)" />
         <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
@@ -66,7 +94,7 @@
       <configuration_2>
         <option name="CONFIGURATION" value="Debug" />
         <option name="PLATFORM" value="x86" />
-        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Assignment/Assignment.vcxproj" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/AssignmentA/AssignmentA.vcxproj" />
         <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
         <option name="PROGRAM_PARAMETERS" value="$(LocalDebuggerCommandArguments)" />
         <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
@@ -76,7 +104,7 @@
       <configuration_3>
         <option name="CONFIGURATION" value="Release" />
         <option name="PLATFORM" value="x64" />
-        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Assignment/Assignment.vcxproj" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/AssignmentA/AssignmentA.vcxproj" />
         <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
         <option name="PROGRAM_PARAMETERS" value="$(LocalDebuggerCommandArguments)" />
         <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
@@ -86,23 +114,23 @@
       <configuration_4>
         <option name="CONFIGURATION" value="Release" />
         <option name="PLATFORM" value="x86" />
-        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Assignment/Assignment.vcxproj" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/AssignmentA/AssignmentA.vcxproj" />
         <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
         <option name="PROGRAM_PARAMETERS" value="$(LocalDebuggerCommandArguments)" />
         <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
       </configuration_4>
-      <option name="DEFAULT_PROJECT_PATH" value="$PROJECT_DIR$/Assignment/Assignment.vcxproj" />
+      <option name="DEFAULT_PROJECT_PATH" value="$PROJECT_DIR$/AssignmentA/AssignmentA.vcxproj" />
       <method v="2">
         <option name="Build" />
       </method>
     </configuration>
-    <configuration name="Exam" type="CppProject" factoryName="C++ Project">
+    <configuration name="AssignmentB" type="CppProject" factoryName="C++ Project">
       <configuration_1>
         <option name="CONFIGURATION" value="Debug" />
         <option name="PLATFORM" value="x64" />
-        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/WeekA2/Week2.vcxproj" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/AssignmentB/AssignmentB.vcxproj" />
         <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
         <option name="PROGRAM_PARAMETERS" value="$(LocalDebuggerCommandArguments)" />
         <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
@@ -112,7 +140,7 @@
       <configuration_2>
         <option name="CONFIGURATION" value="Debug" />
         <option name="PLATFORM" value="x86" />
-        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Exam/Exam.vcxproj" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/AssignmentB/AssignmentB.vcxproj" />
         <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
         <option name="PROGRAM_PARAMETERS" value="$(LocalDebuggerCommandArguments)" />
         <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
@@ -122,7 +150,7 @@
       <configuration_3>
         <option name="CONFIGURATION" value="Release" />
         <option name="PLATFORM" value="x64" />
-        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Exam/Exam.vcxproj" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/AssignmentB/AssignmentB.vcxproj" />
         <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
         <option name="PROGRAM_PARAMETERS" value="$(LocalDebuggerCommandArguments)" />
         <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
@@ -132,23 +160,23 @@
       <configuration_4>
         <option name="CONFIGURATION" value="Release" />
         <option name="PLATFORM" value="x86" />
-        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Exam/Exam.vcxproj" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/AssignmentB/AssignmentB.vcxproj" />
         <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
         <option name="PROGRAM_PARAMETERS" value="$(LocalDebuggerCommandArguments)" />
         <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
       </configuration_4>
-      <option name="DEFAULT_PROJECT_PATH" value="$PROJECT_DIR$/Exam/Exam.vcxproj" />
+      <option name="DEFAULT_PROJECT_PATH" value="$PROJECT_DIR$/AssignmentB/AssignmentB.vcxproj" />
       <method v="2">
         <option name="Build" />
       </method>
     </configuration>
-    <configuration name="Week 5" type="CppProject" factoryName="C++ Project">
+    <configuration name="ExamA" type="CppProject" factoryName="C++ Project">
       <configuration_1>
         <option name="CONFIGURATION" value="Debug" />
         <option name="PLATFORM" value="x64" />
-        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Week 5/Week 5.vcxproj" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/ExamA/ExamA.vcxproj" />
         <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
         <option name="PROGRAM_PARAMETERS" value="$(LocalDebuggerCommandArguments)" />
         <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
@@ -158,7 +186,7 @@
       <configuration_2>
         <option name="CONFIGURATION" value="Debug" />
         <option name="PLATFORM" value="x86" />
-        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Week 5/Week 5.vcxproj" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/ExamA/ExamA.vcxproj" />
         <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
         <option name="PROGRAM_PARAMETERS" value="$(LocalDebuggerCommandArguments)" />
         <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
@@ -168,7 +196,7 @@
       <configuration_3>
         <option name="CONFIGURATION" value="Release" />
         <option name="PLATFORM" value="x64" />
-        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Week 5/Week 5.vcxproj" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/ExamA/ExamA.vcxproj" />
         <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
         <option name="PROGRAM_PARAMETERS" value="$(LocalDebuggerCommandArguments)" />
         <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
@@ -178,23 +206,23 @@
       <configuration_4>
         <option name="CONFIGURATION" value="Release" />
         <option name="PLATFORM" value="x86" />
-        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Week 5/Week 5.vcxproj" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/ExamA/ExamA.vcxproj" />
         <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
         <option name="PROGRAM_PARAMETERS" value="$(LocalDebuggerCommandArguments)" />
         <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
       </configuration_4>
-      <option name="DEFAULT_PROJECT_PATH" value="$PROJECT_DIR$/Week 5/Week 5.vcxproj" />
+      <option name="DEFAULT_PROJECT_PATH" value="$PROJECT_DIR$/ExamA/ExamA.vcxproj" />
       <method v="2">
         <option name="Build" />
       </method>
     </configuration>
-    <configuration name="Week2" type="CppProject" factoryName="C++ Project">
+    <configuration name="WeekA2" type="CppProject" factoryName="C++ Project">
       <configuration_1>
         <option name="CONFIGURATION" value="Debug" />
         <option name="PLATFORM" value="x64" />
-        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Week2/Week2.vcxproj" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/WeekA2/WeekA2.vcxproj" />
         <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
         <option name="PROGRAM_PARAMETERS" value="$(LocalDebuggerCommandArguments)" />
         <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
@@ -204,7 +232,7 @@
       <configuration_2>
         <option name="CONFIGURATION" value="Debug" />
         <option name="PLATFORM" value="x86" />
-        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Week2/Week2.vcxproj" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/WeekA2/WeekA2.vcxproj" />
         <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
         <option name="PROGRAM_PARAMETERS" value="$(LocalDebuggerCommandArguments)" />
         <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
@@ -214,7 +242,7 @@
       <configuration_3>
         <option name="CONFIGURATION" value="Release" />
         <option name="PLATFORM" value="x64" />
-        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Week2/Week2.vcxproj" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/WeekA2/WeekA2.vcxproj" />
         <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
         <option name="PROGRAM_PARAMETERS" value="$(LocalDebuggerCommandArguments)" />
         <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
@@ -224,23 +252,23 @@
       <configuration_4>
         <option name="CONFIGURATION" value="Release" />
         <option name="PLATFORM" value="x86" />
-        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Week2/Week2.vcxproj" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/WeekA2/WeekA2.vcxproj" />
         <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
         <option name="PROGRAM_PARAMETERS" value="$(LocalDebuggerCommandArguments)" />
         <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
       </configuration_4>
-      <option name="DEFAULT_PROJECT_PATH" value="$PROJECT_DIR$/Week2/Week2.vcxproj" />
+      <option name="DEFAULT_PROJECT_PATH" value="$PROJECT_DIR$/WeekA2/WeekA2.vcxproj" />
       <method v="2">
         <option name="Build" />
       </method>
     </configuration>
-    <configuration name="Week3" type="CppProject" factoryName="C++ Project">
+    <configuration name="WeekA3" type="CppProject" factoryName="C++ Project">
       <configuration_1>
         <option name="CONFIGURATION" value="Debug" />
         <option name="PLATFORM" value="x64" />
-        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Week3/Week3.vcxproj" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/WeekA3/WeekA3.vcxproj" />
         <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
         <option name="PROGRAM_PARAMETERS" value="$(LocalDebuggerCommandArguments)" />
         <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
@@ -250,7 +278,7 @@
       <configuration_2>
         <option name="CONFIGURATION" value="Debug" />
         <option name="PLATFORM" value="x86" />
-        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Week3/Week3.vcxproj" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/WeekA3/WeekA3.vcxproj" />
         <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
         <option name="PROGRAM_PARAMETERS" value="$(LocalDebuggerCommandArguments)" />
         <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
@@ -260,7 +288,7 @@
       <configuration_3>
         <option name="CONFIGURATION" value="Release" />
         <option name="PLATFORM" value="x64" />
-        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Week3/Week3.vcxproj" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/WeekA3/WeekA3.vcxproj" />
         <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
         <option name="PROGRAM_PARAMETERS" value="$(LocalDebuggerCommandArguments)" />
         <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
@@ -270,23 +298,23 @@
       <configuration_4>
         <option name="CONFIGURATION" value="Release" />
         <option name="PLATFORM" value="x86" />
-        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Week3/Week3.vcxproj" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/WeekA3/WeekA3.vcxproj" />
         <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
         <option name="PROGRAM_PARAMETERS" value="$(LocalDebuggerCommandArguments)" />
         <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
       </configuration_4>
-      <option name="DEFAULT_PROJECT_PATH" value="$PROJECT_DIR$/Week3/Week3.vcxproj" />
+      <option name="DEFAULT_PROJECT_PATH" value="$PROJECT_DIR$/WeekA3/WeekA3.vcxproj" />
       <method v="2">
         <option name="Build" />
       </method>
     </configuration>
-    <configuration name="Week4" type="CppProject" factoryName="C++ Project">
+    <configuration name="WeekA4" type="CppProject" factoryName="C++ Project">
       <configuration_1>
         <option name="CONFIGURATION" value="Debug" />
         <option name="PLATFORM" value="x64" />
-        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Week4/Week4.vcxproj" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/WeekA4/WeekA4.vcxproj" />
         <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
         <option name="PROGRAM_PARAMETERS" value="$(LocalDebuggerCommandArguments)" />
         <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
@@ -296,7 +324,7 @@
       <configuration_2>
         <option name="CONFIGURATION" value="Debug" />
         <option name="PLATFORM" value="x86" />
-        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Week4/Week4.vcxproj" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/WeekA4/WeekA4.vcxproj" />
         <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
         <option name="PROGRAM_PARAMETERS" value="$(LocalDebuggerCommandArguments)" />
         <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
@@ -306,7 +334,7 @@
       <configuration_3>
         <option name="CONFIGURATION" value="Release" />
         <option name="PLATFORM" value="x64" />
-        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Week4/Week4.vcxproj" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/WeekA4/WeekA4.vcxproj" />
         <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
         <option name="PROGRAM_PARAMETERS" value="$(LocalDebuggerCommandArguments)" />
         <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
@@ -316,14 +344,60 @@
       <configuration_4>
         <option name="CONFIGURATION" value="Release" />
         <option name="PLATFORM" value="x86" />
-        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Week4/Week4.vcxproj" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/WeekA4/WeekA4.vcxproj" />
         <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
         <option name="PROGRAM_PARAMETERS" value="$(LocalDebuggerCommandArguments)" />
         <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="0" />
       </configuration_4>
-      <option name="DEFAULT_PROJECT_PATH" value="$PROJECT_DIR$/Week4/Week4.vcxproj" />
+      <option name="DEFAULT_PROJECT_PATH" value="$PROJECT_DIR$/WeekA4/WeekA4.vcxproj" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="WeekA5" type="CppProject" factoryName="C++ Project">
+      <configuration_1>
+        <option name="CONFIGURATION" value="Debug" />
+        <option name="PLATFORM" value="x64" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/WeekA5/WeekA5.vcxproj" />
+        <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
+        <option name="PROGRAM_PARAMETERS" value="$(LocalDebuggerCommandArguments)" />
+        <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
+        <option name="PASS_PARENT_ENVS" value="1" />
+        <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      </configuration_1>
+      <configuration_2>
+        <option name="CONFIGURATION" value="Debug" />
+        <option name="PLATFORM" value="x86" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/WeekA5/WeekA5.vcxproj" />
+        <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
+        <option name="PROGRAM_PARAMETERS" value="$(LocalDebuggerCommandArguments)" />
+        <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
+        <option name="PASS_PARENT_ENVS" value="1" />
+        <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      </configuration_2>
+      <configuration_3>
+        <option name="CONFIGURATION" value="Release" />
+        <option name="PLATFORM" value="x64" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/WeekA5/WeekA5.vcxproj" />
+        <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
+        <option name="PROGRAM_PARAMETERS" value="$(LocalDebuggerCommandArguments)" />
+        <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
+        <option name="PASS_PARENT_ENVS" value="1" />
+        <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      </configuration_3>
+      <configuration_4>
+        <option name="CONFIGURATION" value="Release" />
+        <option name="PLATFORM" value="x86" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/WeekA5/WeekA5.vcxproj" />
+        <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
+        <option name="PROGRAM_PARAMETERS" value="$(LocalDebuggerCommandArguments)" />
+        <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
+        <option name="PASS_PARENT_ENVS" value="1" />
+        <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      </configuration_4>
+      <option name="DEFAULT_PROJECT_PATH" value="$PROJECT_DIR$/WeekA5/WeekA5.vcxproj" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -421,12 +495,13 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="C++ Project.Assignment" />
-      <item itemvalue="C++ Project.Exam" />
-      <item itemvalue="C++ Project.Week2" />
-      <item itemvalue="C++ Project.Week3" />
-      <item itemvalue="C++ Project.Week4" />
-      <item itemvalue="C++ Project.Week 5" />
+      <item itemvalue="C++ Project.AssignmentA" />
+      <item itemvalue="C++ Project.AssignmentB" />
+      <item itemvalue="C++ Project.ExamA" />
+      <item itemvalue="C++ Project.WeekA2" />
+      <item itemvalue="C++ Project.WeekA3" />
+      <item itemvalue="C++ Project.WeekA4" />
+      <item itemvalue="C++ Project.WeekA5" />
       <item itemvalue="C++ Project.WeekB2" />
       <item itemvalue="C++ Project.WeekB3" />
     </list>
@@ -446,6 +521,9 @@
       <workItem from="1659345815118" duration="2034000" />
       <workItem from="1659347913681" duration="30000" />
       <workItem from="1659348263336" duration="44000" />
+      <workItem from="1659348474556" duration="538000" />
+      <workItem from="1659349051411" duration="418000" />
+      <workItem from="1659349493742" duration="10722000" />
     </task>
     <task id="LOCAL-00001" summary="Track Rider files">
       <created>1658734127644</created>
@@ -468,7 +546,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659347707305</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Refactor project names">
+      <created>1659348500693</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1659348500693</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -492,7 +577,8 @@
     <MESSAGE value="Track Rider files" />
     <MESSAGE value="Solve week 2" />
     <MESSAGE value="Solve week 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve week 3" />
+    <MESSAGE value="Refactor project names" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor project names" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
