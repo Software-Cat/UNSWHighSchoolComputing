@@ -1,5 +1,5 @@
 ﻿#include "bitsbytes.h"
 
-int main() {
+int devowel() {
 	return bitsbytes();
 }

@@ -8,25 +8,33 @@
     <projectFile>Week 5/Week 5.vcxproj</projectFile>
     <projectFile>Exam/Exam.vcxproj</projectFile>
     <projectFile>WeekB2/WeekB2.vcxproj</projectFile>
+    <projectFile>WeekB3/WeekB3.vcxproj</projectFile>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a98e0e9-bd2b-47de-8fed-a628cf8de5f1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.UNSWHighSchoolComputing/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeekB2/bitsbytes.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeekB2/bitsbytes.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeekB2/main.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeekB2/memoryaddress.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeekB2/sumproduct.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeekB2/sumproduct.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeekB3/WeekB3.vcxproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeekB3/WeekB3.vcxproj.filters" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeekB3/devowel.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeekB3/devowel.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeekB3/main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeekB3/proper.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeekB3/reverse.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UNSWHighSchoolComputing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UNSWHighSchoolComputing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeekB2/WeekB2.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/WeekB2/WeekB2.vcxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeekB2/WeekB2.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/WeekB2/WeekB2.vcxproj.filters" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeekB2/lab.c" beforeDir="false" afterPath="$PROJECT_DIR$/WeekB2/memoryaddress.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNSWHighSchoolComputing.sln" beforeDir="false" afterPath="$PROJECT_DIR$/UNSWHighSchoolComputing.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week 5/sub.c" beforeDir="false" afterPath="$PROJECT_DIR$/Week 5/sub.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Week2/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week3/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Week3/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week4/grid.c" beforeDir="false" afterPath="$PROJECT_DIR$/Week4/grid.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeekB2/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/WeekB2/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/stdio.h" root0="SKIP_HIGHLIGHTING" />
@@ -40,20 +48,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;ezargs.lastUsed&quot;: &quot;&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;rider.code.cleanup.on.save&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C++&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "ezargs.lastUsed": "",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "rider.code.cleanup.on.save": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="C++ Project.WeekB2">
+}]]></component>
+  <component name="RunManager" selected="C++ Project.WeekB3">
     <configuration name="Assignment" type="CppProject" factoryName="C++ Project">
       <configuration_1>
         <option name="CONFIGURATION" value="Debug" />
@@ -376,6 +384,52 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="WeekB3" type="CppProject" factoryName="C++ Project">
+      <configuration_1>
+        <option name="CONFIGURATION" value="Debug" />
+        <option name="PLATFORM" value="x64" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/WeekB3/WeekB3.vcxproj" />
+        <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
+        <option name="PROGRAM_PARAMETERS" value="$(LocalDebuggerCommandArguments)" />
+        <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
+        <option name="PASS_PARENT_ENVS" value="1" />
+        <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      </configuration_1>
+      <configuration_2>
+        <option name="CONFIGURATION" value="Debug" />
+        <option name="PLATFORM" value="x86" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/WeekB3/WeekB3.vcxproj" />
+        <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
+        <option name="PROGRAM_PARAMETERS" value="$(LocalDebuggerCommandArguments)" />
+        <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
+        <option name="PASS_PARENT_ENVS" value="1" />
+        <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      </configuration_2>
+      <configuration_3>
+        <option name="CONFIGURATION" value="Release" />
+        <option name="PLATFORM" value="x64" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/WeekB3/WeekB3.vcxproj" />
+        <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
+        <option name="PROGRAM_PARAMETERS" value="$(LocalDebuggerCommandArguments)" />
+        <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
+        <option name="PASS_PARENT_ENVS" value="1" />
+        <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      </configuration_3>
+      <configuration_4>
+        <option name="CONFIGURATION" value="Release" />
+        <option name="PLATFORM" value="x86" />
+        <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/WeekB3/WeekB3.vcxproj" />
+        <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
+        <option name="PROGRAM_PARAMETERS" value="$(LocalDebuggerCommandArguments)" />
+        <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
+        <option name="PASS_PARENT_ENVS" value="1" />
+        <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      </configuration_4>
+      <option name="DEFAULT_PROJECT_PATH" value="$PROJECT_DIR$/WeekB3/WeekB3.vcxproj" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -388,6 +442,8 @@
       <workItem from="1658733378157" duration="254000" />
       <workItem from="1658733670400" duration="145000" />
       <workItem from="1658733925936" duration="3518000" />
+      <workItem from="1659345454968" duration="303000" />
+      <workItem from="1659345815118" duration="1830000" />
     </task>
     <task id="LOCAL-00001" summary="Track Rider files">
       <created>1658734127644</created>
@@ -396,7 +452,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658734127644</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Solve week 2">
+      <created>1659345577294</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1659345577294</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -418,7 +481,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Track Rider files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Track Rider files" />
+    <MESSAGE value="Solve week 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve week 2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

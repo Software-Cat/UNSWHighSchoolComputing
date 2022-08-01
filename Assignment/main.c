@@ -10,6 +10,6 @@
 
 #include "slide.h";
 
-int main() {
+int devowel() {
 	slide();
 }

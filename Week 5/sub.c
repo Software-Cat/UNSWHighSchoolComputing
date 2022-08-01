@@ -5,9 +5,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(void) {
+int devowel(void) {
 	// Initialise the number array and the input
-	int numbers[10] = { 0 };
+	int numbers[10] = {0};
 	int input;
 
 	// Print a prompt
