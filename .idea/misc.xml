@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$/AssignmentB2">
+    <contentRoot DIR="$PROJECT_DIR$" />
+  </component>
+  <component name="CidrRootsConfiguration">
+    <sourceRoots>
+      <file path="$PROJECT_DIR$/AssignmentA" />
+      <file path="$PROJECT_DIR$/AssignmentB" />
+      <file path="$PROJECT_DIR$/AssignmentB2" />
+      <file path="$PROJECT_DIR$/ExamA" />
+      <file path="$PROJECT_DIR$/WeekA2" />
+      <file path="$PROJECT_DIR$/WeekA3" />
+      <file path="$PROJECT_DIR$/WeekA4" />
+      <file path="$PROJECT_DIR$/WeekA5" />
+      <file path="$PROJECT_DIR$/WeekB2" />
+      <file path="$PROJECT_DIR$/WeekB3" />
+    </sourceRoots>
+  </component>
+</project>
