@@ -13,6 +13,7 @@
 #include "main.h"
 
 #include <stdio.h>
+#include <stdlib.h>
 
 #include "pizzeria.h"
 #include "utils.h"
@@ -34,9 +35,9 @@ int main() {
 		pizzeria_print_all(cs_pizzeria);
 
 		// Get the command and process it
-		get_command(command, "Command: ", MAX_COMMAND_LENGTH);
+		get_command_input(command, "Command: ", MAX_COMMAND_LENGTH);
 		pizzeria_process_command(cs_pizzeria, command);
 	}
 
-	return 0;
+	return EXIT_SUCCESS;
 }

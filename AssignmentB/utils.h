@@ -38,6 +38,6 @@ void get_double_input(double* variable, const char* prompt);
  */
 void get_integer_input(int* variable, const char* prompt);
 
-void get_command(char* command, const char* prompt, int length);
+void get_command_input(char* command, const char* prompt, int length);
 
 void print_divider(void);
