@@ -6,12 +6,12 @@
 #include <stdlib.h>
 
 int devowel(void) {
-	for (int i = 0; i < 10; i++) {
-		for (int j = 0; j < 10; j++) {
-			printf(" 0");
-		}
-		printf("\n");
-	}
+    for (int i = 0; i < 10; i++) {
+        for (int j = 0; j < 10; j++) {
+            printf(" 0");
+        }
+        printf("\n");
+    }
 
-	return 0;
+    return 0;
 }

@@ -14,192 +14,192 @@
 #include <math.h>
 
 void slide() {
-	// Initialize the board with empty blocks and the lazer in the middle
-	Board board = { {EMPTY}, SIZE / 2, false, false };
+    // Initialize the board with empty blocks and the lazer in the middle
+    Board board = {{EMPTY}, SIZE / 2, false, false};
 
-	// Read user defined blocks
-	read_blocks(&board);
+    // Read user defined blocks
+    read_blocks(&board);
 
-	// Loop until the game is over
-	while (!board.gameOver) {
-		print_board(&board);
-		read_command(&board);
-	}
+    // Loop until the game is over
+    while (!board.gameOver) {
+        print_board(&board);
+        read_command(&board);
+    }
 
-	// End game
-	print_board(&board);
-	if (board.wonGame) {
-		printf("Game Won!");
-	} else {
-		printf("Game Lost!");
-	}
+    // End game
+    print_board(&board);
+    if (board.wonGame) {
+        printf("Game Won!");
+    } else {
+        printf("Game Lost!");
+    }
 }
 
 void print_board(Board* board) {
-	// For each row
-	for (int i = 0; i < SIZE; i++) {
-		// If the lazer is on the row, print it
-		if (board->lazerY == i) {
-			printf("> ");
-		} else {
-			printf("  ");
-		}
+    // For each row
+    for (int i = 0; i < SIZE; i++) {
+        // If the lazer is on the row, print it
+        if (board->lazerY == i) {
+            printf("> ");
+        } else {
+            printf("  ");
+        }
 
-		// Print the cells
-		for (int j = 0; j < SIZE; j++) {
-			printf("%d ", board->map[i][j]);
-		}
+        // Print the cells
+        for (int j = 0; j < SIZE; j++) {
+            printf("%d ", board->map[i][j]);
+        }
 
-		printf("\n");
-	}
+        printf("\n");
+    }
 }
 
 void change_block(Board* board, int row, int column, int value) {
-	board->map[row][column] = value;
+    board->map[row][column] = value;
 }
 
 void read_block(Board* board) {
-	int row, column, value;
-	scanf("%d %d %d", &row, &column, &value);
+    int row, column, value;
+    scanf("%d %d %d", &row, &column, &value);
 
-	// Make sure row and column are valid locations on map
-	if (row >= SIZE || column >= SIZE) {
-		return;
-	}
+    // Make sure row and column are valid locations on map
+    if (row >= SIZE || column >= SIZE) {
+        return;
+    }
 
-	// Modify the block type at a single position
-	change_block(board, row, column, value);
+    // Modify the block type at a single position
+    change_block(board, row, column, value);
 }
 
 void read_blocks(Board* board) {
-	// Ask for total blocks to scan
-	int blockCount;
-	printf("How many blocks? ");
-	scanf("%d", &blockCount);
+    // Ask for total blocks to scan
+    int blockCount;
+    printf("How many blocks? ");
+    scanf("%d", &blockCount);
 
-	// Scan blocks
-	printf("Enter blocks:\n");
-	for (int i = 0; i < blockCount; i++) {
-		read_block(board);
-	}
+    // Scan blocks
+    printf("Enter blocks:\n");
+    for (int i = 0; i < blockCount; i++) {
+        read_block(board);
+    }
 }
 
 void parse_command(Board* board, int args[]) {
-	switch (args[0]) {
-	case 1:
-		move_lazer(board, args[1]);
-		break;
-	case 2:
-		fire_lazer(board);
-		break;
-	case 3:
-		shift_left(board);
-		break;
-	default:
-		break;
-	}
+    switch (args[0]) {
+        case 1:
+            move_lazer(board, args[1]);
+            break;
+        case 2:
+            fire_lazer(board);
+            break;
+        case 3:
+            shift_left(board);
+            break;
+        default:
+            break;
+    }
 }
 
 void read_command(Board* board) {
-	// Scan all arguments until newline
-	int i = 0;
-	int args[100];
-	char temp;
-	do {
-		int result = scanf("%d%c", &args[i], &temp);
+    // Scan all arguments until newline
+    int i = 0;
+    int args[100];
+    char temp;
+    do {
+        int result = scanf("%d%c", &args[i], &temp);
 
-		// Stop program if EOF is reached
-		if (result < 1) {
-			board->gameOver = true;
-			break;
-		}
+        // Stop program if EOF is reached
+        if (result < 1) {
+            board->gameOver = true;
+            break;
+        }
 
-		i++;
-	} while (temp != '\n');
+        i++;
+    } while (temp != '\n');
 
-	// Execute the command read
-	parse_command(board, args);
+    // Execute the command read
+    parse_command(board, args);
 }
 
 void move_lazer(Board* board, int dir) {
-	// If dir is not up or down (1 or -1), ignore
-	if (!(dir == 1 || dir == -1)) {
-		return;
-	}
+    // If dir is not up or down (1 or -1), ignore
+    if (!(dir == 1 || dir == -1)) {
+        return;
+    }
 
-	// Make sure move is in bounds of map
-	if (!(board->lazerY < 0 || board->lazerY >= SIZE)) {
-		// Move up or down 1 unit
-		board->lazerY -= dir;
-	}
+    // Make sure move is in bounds of map
+    if (!(board->lazerY < 0 || board->lazerY >= SIZE)) {
+        // Move up or down 1 unit
+        board->lazerY -= dir;
+    }
 }
 
 void fire_lazer(Board* board) {
-	// The number of blocks can the lazer destroy at max
-	int energyLeft = 4;
+    // The number of blocks can the lazer destroy at max
+    int energyLeft = 4;
 
-	for (int i = 0; i < SIZE; i++) {
-		// Destroy the block
-		int currentBlock = board->map[board->lazerY][i];
-		if (currentBlock != EMPTY) {
-			// Destroy block
-			board->map[board->lazerY][i] = EMPTY;
+    for (int i = 0; i < SIZE; i++) {
+        // Destroy the block
+        int currentBlock = board->map[board->lazerY][i];
+        if (currentBlock != EMPTY) {
+            // Destroy block
+            board->map[board->lazerY][i] = EMPTY;
 
-			// Spend energy
-			energyLeft--;
-		}
+            // Spend energy
+            energyLeft--;
+        }
 
-		// Stop destroying if no energy left
-		if (energyLeft == 0) {
-			break;
-		}
-	}
+        // Stop destroying if no energy left
+        if (energyLeft == 0) {
+            break;
+        }
+    }
 
-	// Check win
-	if (has_won(board)) {
-		board->gameOver = true;
-		board->wonGame = true;
-	}
+    // Check win
+    if (has_won(board)) {
+        board->gameOver = true;
+        board->wonGame = true;
+    }
 }
 
 void shift_left(Board* board) {
-	// Check lose before move
-	if (has_lost(board)) {
-		board->gameOver = true;
-		board->wonGame = false;
-		return;
-	}
+    // Check lose before move
+    if (has_lost(board)) {
+        board->gameOver = true;
+        board->wonGame = false;
+        return;
+    }
 
-	for (int row = 0; row < SIZE; row++) {
-		for (int column = 0; column < SIZE - 1; column++) {
-			// Shift each cell left, except last column
-			board->map[row][column] = board->map[row][column + 1];
-		}
-		// Fill last column with empty space
-		board->map[row][SIZE - 1] = EMPTY;
-	}
+    for (int row = 0; row < SIZE; row++) {
+        for (int column = 0; column < SIZE - 1; column++) {
+            // Shift each cell left, except last column
+            board->map[row][column] = board->map[row][column + 1];
+        }
+        // Fill last column with empty space
+        board->map[row][SIZE - 1] = EMPTY;
+    }
 }
 
 bool has_won(Board* board) {
-	for (int row = 0; row < SIZE; row++) {
-		for (int column = 0; column < SIZE - 1; column++) {
-			if (board->map[row][column] != EMPTY) {
-				// Return blocking if any cell is not empty
-				return false;
-			}
-		}
-	}
+    for (int row = 0; row < SIZE; row++) {
+        for (int column = 0; column < SIZE - 1; column++) {
+            if (board->map[row][column] != EMPTY) {
+                // Return blocking if any cell is not empty
+                return false;
+            }
+        }
+    }
 
-	return true;
+    return true;
 }
 
 bool has_lost(Board* board) {
-	for (int row = 0; row < SIZE; row++) {
-		if (board->map[row][0] == STONE) {
-			// Return blocking, if any cell is stone, lose immediately
-			return true;
-		}
-	}
+    for (int row = 0; row < SIZE; row++) {
+        if (board->map[row][0] == STONE) {
+            // Return blocking, if any cell is stone, lose immediately
+            return true;
+        }
+    }
 
-	return false;
+    return false;
 }

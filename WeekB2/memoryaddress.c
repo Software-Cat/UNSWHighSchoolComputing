@@ -10,21 +10,21 @@
 
 // ============================================================================
 int memory(void) {
-	// Initialise the data in the number array
-	int number[] = {3, 5, 1, 7, 3, 9};
-	int* address;
+    // Initialise the data in the number array
+    int number[] = {3, 5, 1, 7, 3, 9};
+    int* address;
 
-	// Loop through the array elements
-	for (int i = 0; i < 6; i++) {
-		// Get the memory address of the i'th element of the number array
-		address = &number[i];
+    // Loop through the array elements
+    for (int i = 0; i < 6; i++) {
+        // Get the memory address of the i'th element of the number array
+        address = &number[i];
 
-		// Print the address of each element in decimal and hexadecimal
-		printf("Address = %u   %X\n", address, address);
+        // Print the address of each element in decimal and hexadecimal
+        printf("Address = %u   %X\n", address, address);
 
-		// Increment the index otherwise the loop will run for ever
-		// If you need to terminate a 'forever' loop just hit Ctrl-C
-	}
+        // Increment the index otherwise the loop will run for ever
+        // If you need to terminate a 'forever' loop just hit Ctrl-C
+    }
 
-	return 0;
+    return 0;
 }

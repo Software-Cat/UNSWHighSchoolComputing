@@ -32,6 +32,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CMakeLists.txt" />
+    <Content Include="config.h.in" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

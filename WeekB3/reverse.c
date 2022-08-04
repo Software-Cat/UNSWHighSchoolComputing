@@ -7,22 +7,22 @@
 #include <string.h>
 
 int main(void) {
-	char line[100];
+    char line[100];
 
-	// Read line
-	fgets(line, 100, stdin);
+    // Read line
+    fgets(line, 100, stdin);
 
-	// Put in reverse
-	for (int i = strlen(line) - 1; i >= 0; --i) {
-		const char current = line[i];
-		if (current != '\n') {
-			putchar(current);
-		}
-	}
+    // Put in reverse
+    for (int i = strlen(line) - 1; i >= 0; --i) {
+        const char current = line[i];
+        if (current != '\n') {
+            putchar(current);
+        }
+    }
 
-	// Extra newline
-	printf("\n");
+    // Extra newline
+    printf("\n");
 
-	return 0;
+    return 0;
 
 }

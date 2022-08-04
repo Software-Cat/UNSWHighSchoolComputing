@@ -6,17 +6,17 @@
 #include <stdlib.h>
 
 int numbers(void) {
-	// Initialise the counter
-	int counter = 1;
+    // Initialise the counter
+    int counter = 1;
 
-	// Loop while testing the counter
-	while (counter <= 10) {
-		// Print the number
-		printf("%d\n", counter);
+    // Loop while testing the counter
+    while (counter <= 10) {
+        // Print the number
+        printf("%d\n", counter);
 
-		// Advance the counter
-		counter++;
-	}
+        // Advance the counter
+        counter++;
+    }
 
-	return 0;
+    return 0;
 }

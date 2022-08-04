@@ -7,10 +7,10 @@
 #define STONE 1
 
 typedef struct Board {
-	int map[SIZE][SIZE];
-	int lazerY;
-	bool gameOver;
-	bool wonGame;
+    int map[SIZE][SIZE];
+    int lazerY;
+    bool gameOver;
+    bool wonGame;
 } Board;
 
 void slide();

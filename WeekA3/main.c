@@ -2,6 +2,6 @@
 #include "addition.h"
 
 int devowel() {
-	addition();
-	return 0;
+    addition();
+    return 0;
 }

@@ -24,8 +24,11 @@
 #define MAX_SAMPLE_SIZE 15
 
 double mean(double observations[MAX_SAMPLE_SIZE], int count);
+
 double sum(double observations[MAX_SAMPLE_SIZE], int count);
+
 double std(double observations[MAX_SAMPLE_SIZE], int count);
+
 void sort(double* observations[MAX_SAMPLE_SIZE]);
 
 //=============================================================================
@@ -33,73 +36,73 @@ void sort(double* observations[MAX_SAMPLE_SIZE]);
 //=============================================================================
 
 int part4(void) {
-	int count = 0;
-	double input;
-	double observations[MAX_SAMPLE_SIZE] = { 0 };
+    int count = 0;
+    double input;
+    double observations[MAX_SAMPLE_SIZE] = {0};
 
-	while (1) {
-		scanf("%lf", &input);
+    while (1) {
+        scanf("%lf", &input);
 
-		observations[count] = input;
+        observations[count] = input;
 
-		if (input == 0.0 || count >= MAX_SAMPLE_SIZE - 1) {
-			break;
-		}
+        if (input == 0.0 || count >= MAX_SAMPLE_SIZE - 1) {
+            break;
+        }
 
-		count++;
-	}
+        count++;
+    }
 
-	// The correct format for accepting a double is scanf("lf", &input);
+    // The correct format for accepting a double is scanf("lf", &input);
 
-	printf("count = %d\n", count);
-	printf("mean = %5.3f\n", mean(observations, count));
-	printf("stDev = %5.3f\n", std(observations, count));
+    printf("count = %d\n", count);
+    printf("mean = %5.3f\n", mean(observations, count));
+    printf("stDev = %5.3f\n", std(observations, count));
 
-	sort(observations);
+    sort(observations);
 
-	for (int i = 0; i < MAX_SAMPLE_SIZE; i++) {
-		if (observations[i] != 0) {
-			printf("%5.3f\n", observations[i]);
-		}
-	}
+    for (int i = 0; i < MAX_SAMPLE_SIZE; i++) {
+        if (observations[i] != 0) {
+            printf("%5.3f\n", observations[i]);
+        }
+    }
 }
 
 double sum(double observations[MAX_SAMPLE_SIZE], int count) {
-	double sum = 0;
-	for (int i = 0; i < count; i++) {
-		sum += observations[i];
-	}
+    double sum = 0;
+    for (int i = 0; i < count; i++) {
+        sum += observations[i];
+    }
 
-	return sum;
+    return sum;
 }
 
 double mean(double observations[MAX_SAMPLE_SIZE], int count) {
-	return sum(observations, count) / count;
+    return sum(observations, count) / count;
 }
 
 double std(double observations[MAX_SAMPLE_SIZE], int count) {
-	// Cache mean calculation for efficiency
-	double cachedMean = mean(observations, count);
+    // Cache mean calculation for efficiency
+    double cachedMean = mean(observations, count);
 
-	double squareDiffs[MAX_SAMPLE_SIZE];
-	for (int i = 0; i < count; i++) {
-		squareDiffs[i] = (observations[i] - cachedMean) * (observations[i] - cachedMean);
-	}
+    double squareDiffs[MAX_SAMPLE_SIZE];
+    for (int i = 0; i < count; i++) {
+        squareDiffs[i] = (observations[i] - cachedMean) * (observations[i] - cachedMean);
+    }
 
-	printf("debug: %f\n", sum(squareDiffs, count));
+    printf("debug: %f\n", sum(squareDiffs, count));
 
-	return sqrt(sum(squareDiffs, count) / (double)(count - 1));
+    return sqrt(sum(squareDiffs, count) / (double) (count - 1));
 }
 
 void sort(double* observations[MAX_SAMPLE_SIZE]) {
-	for (int i = 0; i < MAX_SAMPLE_SIZE; i++) {
-		for (int j = 0; j < MAX_SAMPLE_SIZE - i - 1; j++) {
-			if (observations[j] > observations[j + 1]) {
-				// If the order is wrong, swap it (bubble sort)
-				double* temp = observations[j + 1];
-				observations[j + 1] = observations[j];
-				observations[j] = temp;
-			}
-		}
-	}
+    for (int i = 0; i < MAX_SAMPLE_SIZE; i++) {
+        for (int j = 0; j < MAX_SAMPLE_SIZE - i - 1; j++) {
+            if (observations[j] > observations[j + 1]) {
+                // If the order is wrong, swap it (bubble sort)
+                double* temp = observations[j + 1];
+                observations[j + 1] = observations[j];
+                observations[j] = temp;
+            }
+        }
+    }
 }

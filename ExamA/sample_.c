@@ -26,23 +26,23 @@
 // Main
 //=============================================================================
 int part1(void) {
-	int count = 0;
-	double input;
-	double observations[MAX_SAMPLE_SIZE];
+    int count = 0;
+    double input;
+    double observations[MAX_SAMPLE_SIZE];
 
-	while (1) {
-		scanf("%lf", &input);
+    while (1) {
+        scanf("%lf", &input);
 
-		observations[count] = input;
+        observations[count] = input;
 
-		count++;
+        count++;
 
-		if (input == 0.0 || count >= MAX_SAMPLE_SIZE) {
-			break;
-		}
-	}
+        if (input == 0.0 || count >= MAX_SAMPLE_SIZE) {
+            break;
+        }
+    }
 
-	// The correct format for accepting a double is scanf("lf", &input);
+    // The correct format for accepting a double is scanf("lf", &input);
 
-	printf("count = %d\n", count);
+    printf("count = %d\n", count);
 }

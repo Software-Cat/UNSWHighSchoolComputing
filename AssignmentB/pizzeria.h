@@ -22,10 +22,10 @@
 //=============================================================================
 
 typedef struct pizzeria_t {
-	char name[PIZZERIA_NAME_LENGTH];
-	char owner[PIZZERIA_OWNER_LENGTH];
-	int selected_order;
-	order* orders;
+    char name[PIZZERIA_NAME_LENGTH];
+    char owner[PIZZERIA_OWNER_LENGTH];
+    int selected_order;
+    order* orders;
 } pizzeria;
 
 //=============================================================================

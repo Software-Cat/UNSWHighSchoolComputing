@@ -8,25 +8,24 @@
 #include <ctype.h>
 
 int main(void) {
-	int c;
-	int needCaps = 1;
+    int c;
+    int needCaps = 1;
 
-	do {
-		c = getchar();
+    do {
+        c = getchar();
 
-		if (needCaps == 1) {
-			putchar(toupper(c));
-		} else {
-			putchar(c);
-		}
+        if (needCaps == 1) {
+            putchar(toupper(c));
+        } else {
+            putchar(c);
+        }
 
-		if (c == ' ') {
-			needCaps = 1;
-		} else {
-			needCaps = 0;
-		}
-	}
-	while (c != '\n');
+        if (c == ' ') {
+            needCaps = 1;
+        } else {
+            needCaps = 0;
+        }
+    } while (c != '\n');
 
-	return 0;
+    return 0;
 }

@@ -76,17 +76,17 @@ void pizzeria_process_command(pizzeria* self, char* command) {
     // an understanding on how it works.  Next time you will have to
     // figure it out for yourself
     switch (command[0]) {
-    case 'n': {
-        order_append(&self->orders, order_new());
-        break;
-    }
-    case 's': {
-        // TODO: Get the number of the selected order and set the field in pizzeria.
-        // TODO: Check for order number out of bounds
-        int order_number = strtol(&command[1], NULL, 10);
-        self->selected_order = order_number;
-        break;
-    }
-    default: ;
+        case 'n': {
+            order_append(&self->orders, order_new());
+            break;
+        }
+        case 's': {
+            // TODO: Get the number of the selected order and set the field in pizzeria.
+            // TODO: Check for order number out of bounds
+            int order_number = strtol(&command[1], NULL, 10);
+            self->selected_order = order_number;
+            break;
+        }
+        default:;
     }
 }

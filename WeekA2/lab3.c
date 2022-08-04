@@ -5,8 +5,8 @@
 #include <stdlib.h>
 
 void bird() {
-	printf("  ___\n");
-	printf(" ('v')\n");
-	printf("((___))\n");
-	printf(" ^   ^\n");
+    printf("  ___\n");
+    printf(" ('v')\n");
+    printf("((___))\n");
+    printf(" ^   ^\n");
 }

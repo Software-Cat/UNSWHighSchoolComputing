@@ -1,15 +1,11 @@
 //=============================================================================
-// Slide
-// main.c
+// CS Pizzeria
+// config.h.in
 //
 // This program was written by Bowen Wu
-// on 20/07/22
-//
-// Version 1.0.0 (2021-03-08): Initial Assignment Release
+// on 04/08/22
 //=============================================================================
 
-#include "slide.h";
+#pragma once
 
-int devowel() {
-    slide();
-}
+#define CMAKE_BUILD_TYPE  "@CMAKE_BUILD_TYPE@"

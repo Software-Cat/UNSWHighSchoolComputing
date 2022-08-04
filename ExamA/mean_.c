@@ -29,33 +29,33 @@ double mean(double observations[MAX_SAMPLE_SIZE], int count);
 //=============================================================================
 
 int part2(void) {
-	int count = 0;
-	double input;
-	double observations[MAX_SAMPLE_SIZE];
+    int count = 0;
+    double input;
+    double observations[MAX_SAMPLE_SIZE];
 
-	while (1) {
-		scanf("%lf", &input);
+    while (1) {
+        scanf("%lf", &input);
 
-		observations[count] = input;
+        observations[count] = input;
 
-		if (input == 0.0 || count >= MAX_SAMPLE_SIZE - 1) {
-			break;
-		}
+        if (input == 0.0 || count >= MAX_SAMPLE_SIZE - 1) {
+            break;
+        }
 
-		count++;
-	}
+        count++;
+    }
 
-	// The correct format for accepting a double is scanf("lf", &input);
+    // The correct format for accepting a double is scanf("lf", &input);
 
-	printf("count = %d\n", count);
-	printf("mean = %5.3f\n", mean(observations, count));
+    printf("count = %d\n", count);
+    printf("mean = %5.3f\n", mean(observations, count));
 }
 
 double mean(double observations[MAX_SAMPLE_SIZE], int count) {
-	double sum = 0;
-	for (int i = 0; i < MAX_SAMPLE_SIZE; i++) {
-		sum += observations[i];
-	}
+    double sum = 0;
+    for (int i = 0; i < MAX_SAMPLE_SIZE; i++) {
+        sum += observations[i];
+    }
 
-	return sum / count;
+    return sum / count;
 }

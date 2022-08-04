@@ -6,28 +6,28 @@
 #include <stdlib.h>
 
 int numbers(void) {
-	// Initialise the array
-	int number[10] = { 0 };
+    // Initialise the array
+    int number[10] = {0};
 
-	// Loop while testing the index and set each number element
-	int index = 0;
-	while (index < 10) {
-		// Set the number element
-		number[index] = index + 1;
+    // Loop while testing the index and set each number element
+    int index = 0;
+    while (index < 10) {
+        // Set the number element
+        number[index] = index + 1;
 
-		// Advance the index
-		index++;
-	}
+        // Advance the index
+        index++;
+    }
 
-	// Loop while testing the index and print each number element
-	index = 0;
-	while (index < 10) {
-		// Print the number element
-		printf("%d\n", number[index]);
+    // Loop while testing the index and print each number element
+    index = 0;
+    while (index < 10) {
+        // Print the number element
+        printf("%d\n", number[index]);
 
-		// Advance the index
-		index = index + 1;
-	}
+        // Advance the index
+        index = index + 1;
+    }
 
-	return 0;
+    return 0;
 }

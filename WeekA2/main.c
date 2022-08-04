@@ -2,6 +2,6 @@
 #include "lab3.h"
 
 int devowel() {
-	say_hello();
-	bird();
+    say_hello();
+    bird();
 }

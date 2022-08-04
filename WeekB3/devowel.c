@@ -9,17 +9,16 @@
 #include <ctype.h>
 
 int devowel(void) {
-	int c;
-	do {
-		c = getchar();
+    int c;
+    do {
+        c = getchar();
 
-		if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
-			putchar('*');
-		} else {
-			putchar(c);
-		}
-	}
-	while (c != '\n');
+        if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
+            putchar('*');
+        } else {
+            putchar(c);
+        }
+    } while (c != '\n');
 
-	return 0;
+    return 0;
 }

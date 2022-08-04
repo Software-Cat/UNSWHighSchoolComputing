@@ -2,5 +2,5 @@
 #include <stdio.h>
 
 void say_hello() {
-	printf("Hello, it is good to C you!\n");
+    printf("Hello, it is good to C you!\n");
 }
