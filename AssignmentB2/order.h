@@ -22,11 +22,11 @@
 //=============================================================================
 
 typedef struct order_t {
-	char customer[ORDER_CUSTOMER_LENGTH];
-	char pizza[ORDER_PIZZA_LENGTH];
-	double price;
-	int time;
-	struct order_t* next;
+    char customer[ORDER_CUSTOMER_LENGTH];
+    char pizza[ORDER_PIZZA_LENGTH];
+    double price;
+    int time;
+    struct order_t* next;
 } order;
 
 //=============================================================================

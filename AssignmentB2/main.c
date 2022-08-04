@@ -14,30 +14,41 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #include "pizzeria.h"
 #include "utils.h"
+#if __has_include("config.h")
+    #include "config.h"
+#endif
 
 //=============================================================================
 // Functions
 //=============================================================================
 
 int main() {
-	// Create the root for the data tree
-	printf("Creating pizzeria\n");
-	pizzeria* cs_pizzeria = pizzeria_new();
+#ifdef CMAKE_BUILD_TYPE
+    if (strcmp("Debug", CMAKE_BUILD_TYPE) == 0) {
+        // Disable buffer to fix debugger issue
+        setbuf(stdout, 0);
+    }
+#endif
 
-	// Get commands from the user and process them
-	char command[MAX_COMMAND_LENGTH] = "?";
-	while (command[0] != 'x') {
-		// Print the order book first
-		printf("\n");
-		pizzeria_print_all(cs_pizzeria);
+    // Create the root for the data tree
+    printf("Creating pizzeria\n");
+    pizzeria* cs_pizzeria = pizzeria_new();
 
-		// Get the command and process it
-		get_command_input(command, "Command: ", MAX_COMMAND_LENGTH);
-		pizzeria_process_command(cs_pizzeria, command);
-	}
+    // Get commands from the user and process them
+    char command[MAX_COMMAND_LENGTH] = "?";
+    while (command[0] != 'x') {
+        // Print the order book first
+        printf("\n");
+        pizzeria_print_all(cs_pizzeria);
 
-	return EXIT_SUCCESS;
+        // Get the command and process it
+        get_command_input(command, "Command: ", MAX_COMMAND_LENGTH);
+        pizzeria_process_command(cs_pizzeria, command);
+    }
+
+    return EXIT_SUCCESS;
 }
