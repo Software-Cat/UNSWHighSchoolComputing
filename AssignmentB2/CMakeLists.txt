@@ -6,11 +6,11 @@
 # on 04/08/22
 # =============================================================================
 
-# Basic Info
+# Projects
 cmake_minimum_required(VERSION 3.10)
 
 project(AssignmentB2)
-add_executable(pizzeria main.c order.c pizzeria.c utils.c)
+add_executable(pizzeria main.c main.h order.c order.h pizzeria.c pizzeria.h utils.c utils.h ingredient.c ingredient.h)
 
 set(CMAKE_C_STANDARD 23)
 set(CMAKE_C_STANDARD_REQUIRED True)

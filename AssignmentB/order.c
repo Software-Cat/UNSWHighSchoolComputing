@@ -63,7 +63,7 @@ void order_print(order* self, const int order_number, const bool selected) {
     printf("\n");
 }
 
-void order_append(order** head, order* element) {
+void ingredient_append(order** head, order* element) {
     // Ensure the new node is the last node
     element->next = NULL;
 

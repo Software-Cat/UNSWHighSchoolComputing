@@ -52,4 +52,4 @@ void order_print(order* self, int order_number, bool selected);
  * \param head reference to head of list
  * \param element the new element to append
  */
-void order_append(order** head, order* element);
+void ingredient_append(order** head, order* element);

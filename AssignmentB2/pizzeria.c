@@ -77,7 +77,7 @@ void pizzeria_process_command(pizzeria* self, char* command) {
     // figure it out for yourself
     switch (command[0]) {
         case 'n': {
-            order_append(&self->orders, order_new());
+            ingredient_append(&self->orders, order_new());
             break;
         }
         case 's': {

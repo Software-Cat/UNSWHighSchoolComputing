@@ -1,6 +1,6 @@
 //=============================================================================
 // CS Pizzeria
-// config.h.in
+// ingredient.h
 //
 // This program was written by Bowen Wu
 // on 04/08/22
@@ -12,4 +12,15 @@
 
 #pragma once
 
-#define CMAKE_BUILD_TYPE  "@CMAKE_BUILD_TYPE@"
+#define INGREDIENT_NAME_LENGTH 32
+
+//=============================================================================
+// Structs
+//=============================================================================
+
+typedef struct ingredient_t {
+    char name[INGREDIENT_NAME_LENGTH];
+    int amount;
+    double price;
+    struct ingredient_t* next;
+} ingredient;

@@ -27,7 +27,7 @@ order* order_new() {
 
     // Use helper functions to get the information from the user
     // Don't forget to set all the fields to an initial value. The NULL
-    // value has a special meaning in some of the other helper functions.
+    // value has a special meaning in some other helper functions.
     get_char_input(new_order->customer, "Customer: ", ORDER_CUSTOMER_LENGTH);
     get_char_input(new_order->pizza, "Pizza: ", ORDER_PIZZA_LENGTH);
     get_double_input(&new_order->price, "Cost: ");
@@ -63,7 +63,7 @@ void order_print(order* self, const int order_number, const bool selected) {
     printf("\n");
 }
 
-void order_append(order** head, order* element) {
+void ingredient_append(order** head, order* element) {
     // Ensure the new node is the last node
     element->next = NULL;
 
