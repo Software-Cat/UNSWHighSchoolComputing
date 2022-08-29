@@ -24,7 +24,7 @@
 typedef struct pizzeria_t {
     char name[PIZZERIA_NAME_LENGTH];
     char owner[PIZZERIA_OWNER_LENGTH];
-    int selected_order;
+    order* selected_order;
     order* orders;
 } pizzeria;
 
@@ -49,3 +49,11 @@ void pizzeria_print_header(pizzeria* self);
 void pizzeria_print_footer(pizzeria* self);
 
 void pizzeria_process_command(pizzeria* self, char* command);
+
+void pizzeria_select_order(pizzeria* self, int order_index);
+
+void pizzeria_print_completed(pizzeria* self);
+
+void pizzeria_print_uncompleted(pizzeria* self);
+
+double pizzeria_revenue(pizzeria* self);

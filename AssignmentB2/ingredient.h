@@ -24,3 +24,26 @@ typedef struct ingredient_t {
     double price;
     struct ingredient_t* next;
 } ingredient;
+
+//=============================================================================
+// Functions
+//=============================================================================
+
+/**
+ * \brief instantiates a new ingredient
+ * \return pointer to created ingredient
+ */
+ingredient* ingredient_new(void);
+
+/**
+ * \brief print the current ingredient node in the linked list
+ * \param self the current ingredient
+ */
+void ingredient_print(ingredient* self);
+
+/**
+ * \brief append element at end of list
+ * \param head reference to head of list
+ * \param element the new element to append
+ */
+void ingredient_append(ingredient** head, ingredient* element);

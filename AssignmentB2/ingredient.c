@@ -12,6 +12,7 @@
 
 #include "ingredient.h"
 
+#include <stdio.h>
 #include <stdlib.h>
 
 #include "utils.h"
@@ -33,6 +34,24 @@ ingredient* ingredient_new() {
     new_ingredient->next = NULL;
 
     return new_ingredient;
+}
+
+void ingredient_print(ingredient* self) {
+    // Print whitespace (26 chars)
+    printf("                               ");
+
+    // Print amount (4 chars)
+    // TODO: Fix weird trick here to limit to one digit with modulus
+    printf("+ %d ", self->amount % 10);
+
+    // Print ingredient name (15 chars)
+    printf("%-15s", self->name);
+
+    // Print price (10 chars)
+    printf("$%-9.2f", self->price);
+
+    // Newline
+    printf("\n");
 }
 
 void ingredient_append(ingredient** head, ingredient* element) {

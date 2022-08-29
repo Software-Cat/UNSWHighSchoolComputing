@@ -50,11 +50,16 @@ void get_integer_input(int* variable, const char* prompt) {
 
 void get_command_input(char* command, const char* prompt, const int length) {
     // Print list of commands
-    printf("n - new order, s# - select order #, x - exit\n");
+    printf("n - new order, s# - select order #, i - add ingredient, t - tracking, x - exit\n");
+    printf("r - reports\n");
 
     get_char_input(command, prompt, length);
 }
 
 void print_divider() {
     printf("---------+---------+---------+---------+---------+---------+---------+---------+\n");
+}
+
+void print_short_divider() {
+    printf("---------+---------+---------+---------+---------+---------+\n");
 }

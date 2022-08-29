@@ -30,7 +30,7 @@
 int main() {
 #ifdef CMAKE_BUILD_TYPE
     if (strcmp("Debug", CMAKE_BUILD_TYPE) == 0) {
-        // Disable buffer to fix debugger issue
+        // Disable buffer to fix debugger issue in my IDE, no effect on program output
         setbuf(stdout, 0);
     }
 #endif
