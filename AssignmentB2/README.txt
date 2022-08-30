@@ -5,6 +5,6 @@ compile manually.
 
 The project is compiled via CMake:
 
-	$ cd ~/stage2
+    $ cd ~/stage2
     $ cmake ./
     $ cmake --build ./
