@@ -19,12 +19,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ingredient.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="order.c" />
     <ClCompile Include="pizzeria.c" />
     <ClCompile Include="utils.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ingredient.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="order.h" />
     <ClInclude Include="pizzeria.h" />
